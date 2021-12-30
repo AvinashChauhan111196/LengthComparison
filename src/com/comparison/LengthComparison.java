@@ -21,8 +21,22 @@ public class LengthComparison
         length2 = Math.sqrt(Math.pow(x4-x3,2) + Math.pow(y4-y3,2));
         System.out.println("The length of line2 " + length2);
 
+        if (length1 == length2)
+        {
+            System.out.println("Length of both line is equal");
+        }
+        else if (length1 < length2)
+        {
+            System.out.println("Length of line1 is less than line2");
+        }
+        else if (length1 > length2)
+        {
+            System.out.println("Length of line1 is greater than length2");
+        }
+
         Double d1 = new Double(length1);
         Double d2 = new Double(length2);
         System.out.println(d1.equals(d2));
+        System.out.println(d1.compareTo(d2));
     }
 }
